@@ -9,8 +9,9 @@ function Button({ as, children, className, disabled, size, variant }) {
       as={as}
       disabled={disabled}
       className={classNames(
-        styles.button,
-        styles.variant[variant],
+        styles.button({
+          color: variant,
+        }),
         styles.size[size],
         {
           [styles.state.enabled]: !disabled,
