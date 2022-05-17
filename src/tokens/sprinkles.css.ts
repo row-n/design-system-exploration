@@ -10,6 +10,12 @@ const colorAtomicProperties = defineProperties({
   },
 });
 
+const borderAtomicProperties = defineProperties({
+  properties: {
+    borderRadius: tokens.borderRadius,
+  },
+});
+
 const fontAtomicProperties = defineProperties({
   properties: {
     fontFamily: tokens.fontFamily,
@@ -80,6 +86,7 @@ const responsiveAtomicProperties = defineProperties({
 
 export default createSprinkles(
   colorAtomicProperties,
+  borderAtomicProperties,
   fontAtomicProperties,
   layoutAtomicProperties,
   responsiveAtomicProperties
