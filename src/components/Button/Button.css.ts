@@ -1,6 +1,7 @@
 import { styleVariants } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 import sprinkles from '../../tokens/sprinkles.css.ts';
+import tokens from '../../tokens/tokens';
 
 export const button = recipe({
   base: [
@@ -22,7 +23,9 @@ export const button = recipe({
           backgroundColor: 'primary',
         }),
         {
-          ':hover': {},
+          ':hover': {
+            backgroundColor: tokens.color.primaryDark,
+          },
           ':active': {},
         },
       ],
@@ -31,7 +34,9 @@ export const button = recipe({
           backgroundColor: 'secondary',
         }),
         {
-          ':hover': {},
+          ':hover': {
+            backgroundColor: tokens.color.secondaryDark,
+          },
           ':active': {},
         },
       ],

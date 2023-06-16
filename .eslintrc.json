@@ -1,5 +1,10 @@
 {
-    "extends": ["airbnb", "prettier", "plugin:react/jsx-runtime"],
+    "extends": [
+        "airbnb",
+        "prettier",
+        "plugin:react/jsx-runtime",
+        "plugin:storybook/recommended"
+    ],
     "parser": "@babel/eslint-parser",
     "parserOptions": {
         "ecmaVersion": 8,
@@ -14,16 +19,38 @@
         "jasmine": true,
         "jest": true
     },
-    "plugins": ["import", "prettier", "jsx-a11y"],
+    "plugins": [
+        "import",
+        "prettier",
+        "jsx-a11y"
+    ],
     "rules": {
-        "prettier/prettier": ["error"],
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+        "prettier/prettier": [
+            "error"
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ]
     },
     "settings": {
         "import/resolver": {
             "node": {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"],
-                "moduleDirectory": ["node_modules", "src/"]
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ],
+                "moduleDirectory": [
+                    "node_modules",
+                    "src/"
+                ]
             }
         }
     }
