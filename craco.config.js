@@ -12,7 +12,10 @@ module.exports = {
         (plugin) => plugin instanceof ModuleScopePlugin
       );
       moduleScopePlugin.allowedPaths.push(
-        path.resolve(__dirname, 'node_modules/@vanilla-extract/webpack-plugin')
+        path.resolve(
+          __dirname,
+          'node_modules/.pnpm/@vanilla-extract+webpack-plugin@2.2.0_@types+node@18.11.18_webpack@5.75.0/node_modules/@vanilla-extract/webpack-plugin'
+        )
       );
 
       return webpackConfig;
