@@ -7,6 +7,7 @@
     "start:storybook": "storybook dev -p 6006",
     "build": "craco build",
     "build:storybook": "storybook build",
+    "build:docs": "storybook build --docs",
     "test": "craco test",
     "lint": "eslint --ext .jsx,.js src",
     "eject": "react-scripts eject",

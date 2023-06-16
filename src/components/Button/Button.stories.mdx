@@ -1,0 +1,42 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import Button from './Button';
+
+# Button
+Primary UI component for user interaction
+
+<Meta title="Components/Button" component={Button} />
+
+<Canvas>
+  <Story name="Default">
+    <Button variant="primary">Button</Button>
+  </Story>
+</Canvas>
+
+<ArgsTable story="Default" />
+
+## Size
+
+<Canvas>
+  <Story name="Size">
+    {(args) => (
+      <div>
+        <Button size="small">Small Button</Button>
+        <Button size="medium">Medium Button</Button>
+        <Button size="large">Large Button</Button>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+## Variant
+
+<Canvas>
+  <Story name="Variant">
+    {(args) => (
+      <div>
+        <Button variant="primary">Primary Button</Button>
+        <Button variant="secondary">Secondary Button</Button>
+      </div>
+    )}
+  </Story>
+</Canvas>
