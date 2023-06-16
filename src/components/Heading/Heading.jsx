@@ -13,6 +13,9 @@ const resolveComponent = {
   6: 'h6',
 };
 
+/**
+ * Title page sections or sub-sections throughout a page layout
+ */
 function Heading({ as, children, className, level }) {
   const elementType = as || resolveComponent[level];
 
@@ -33,9 +36,28 @@ function Heading({ as, children, className, level }) {
 }
 
 Heading.propTypes = {
+  /**
+   * Define the Heading element, can be any HTML element
+   */
   as: PropTypes.string,
+  /**
+   * Heading contents
+   */
   children: PropTypes.node,
+  /**
+   * Specify your own class name. Helpful to customise the layout of this component
+   * Applied to the parent container
+   */
   className: PropTypes.string,
+  /**
+   * Change the Heading HTML element and style to suit
+   * - `1` will result in H1
+   * - `2` will result in H2
+   * - `3` will result in H3
+   * - `4` will result in H4
+   * - `5` will result in H5
+   * - `6` will result in H6
+   */
   level: PropTypes.oneOf(['1', '2', '3', '4', '5', '6']),
 };
 
